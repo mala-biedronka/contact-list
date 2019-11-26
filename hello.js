@@ -13,9 +13,9 @@ const contactList = [
     }
 ];
 
-// Function creates a new contact and adds it to the contact list
+// Function creates new contact and adds it to the contact list
 function addNewContact(firstName, lastName, phoneNumber, emailAddress) {
-    contactList.push(
+    return contactList.push(
         {
         firstName: firstName,
         lastName: lastName,
@@ -25,9 +25,14 @@ function addNewContact(firstName, lastName, phoneNumber, emailAddress) {
     );
 }
 addNewContact('Iryna', 'Predborska', '843-901-372', 'malabiedronka@gmail.com');
-
-console.log(contactList);
-
 addNewContact('Yuraska', 'Bunya', '142-735-823', 'shini@gmail.com');
+
+// Calling this function allows to create new contact by passing new arguments
+addNewContact('Bunka', 'Busyona', '466-822-858', 'bunbunmeow@gmail.com');
+
+function deleteContact(index) {
+    return contactList.splice(index, 1);
+}
+console.log('deleted: ', deleteContact(3));
 
 console.log(contactList);
