@@ -1,5 +1,12 @@
 let currentId = 1;
 
+// let newId = 1;
+// const idFirst = newId++;
+// const idSecond = newId++;
+// const idThird = newId++;
+// console.log(idThird);
+
+
 const contactList = [
     {
         id: currentId++,
@@ -36,6 +43,20 @@ addNewContact('Yuraska', 'Bunya', '142-735-823', 'shini@gmail.com');
 addNewContact('Bunka', 'Busyona', '466-822-858', 'bunbunmeow@gmail.com');
 addNewContact('Klaudia', 'Deletovana', '758-336-123', 'kla@deleted.com');
 
+// Function finds and returns contact (array element) by searching for it in the list and using determined parameter.
+const foundContacts = contactList.filter(function (contact) {
+    return contact.firstName[0] === 'K' || contact.lastName[0] === 'B';
+});
+
+
+// Finds contact`s index in the contact list
+function findLocation(firstLetter){
+    return contactList.findIndex(function(contact) {
+            return contact.firstName[0] === firstLetter;
+            }
+    );
+}
+console.log(findLocation('K'));
 
 // Function deletes a needed contact from the contact list. Calling the function while logging returns a deleted contact.
 function deleteContact(index) {
@@ -43,23 +64,6 @@ function deleteContact(index) {
 }
 
 // console.log('deleted: ', deleteContact(3));
-
-// Function finds and returns contact (array element) by searching for it in the list and using determined parameter.
-// let findContact = contactList.filter(function(eachContact) {
-//             return eachContact.firstName === 'Klavdia' || eachContact.lastName === 'Busyona';
-//         }
-//     );
-
-let foundContacts = contactList.filter(function (contact) {
-    return contact.firstName[0] === 'K' || contact.lastName[0] === 'B';
-});
-
-console.log(foundContacts);
-
-
-
-
-
 
 
 
