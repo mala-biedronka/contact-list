@@ -48,10 +48,10 @@ const foundContacts = contactList.filter(function (contact) {
     return contact.firstName[0] === 'K' || contact.lastName[0] === 'B';
 });
 
-// Finds contact`s index in the contact list
+// Function finds contact`s index in the contact list
 function findLocation(firstLetter){
     return contactList.findIndex(function(contact) {
-            return contact.firstName[0] === firstLetter;
+            return contact.firstName.startsWith(firstLetter);
         }
     );
 }
@@ -60,6 +60,11 @@ function findLocation(firstLetter){
 function deleteContact(index) {
     return contactList.splice(index, 1);
 }
-console.log('deleted: ', deleteContact(findLocation('K')));
+// console.log('deleted: ', deleteContact(findLocation('K')));
 
 
+
+// Functions allow to sort the contact list by alphabet, e-mail alphabet and increasing phone numbers.
+console.log(contactList.sort((left, right) => left.firstName > right.firstName ? 1 : -1));
+console.log(contactList.sort((left, right) => left.emailAddress > right.emailAddress ? 1 : -1));
+console.log(contactList.sort((left, right) => left.phoneNumber > right.phoneNumber ? 1 : -1));
