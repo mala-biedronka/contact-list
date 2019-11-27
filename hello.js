@@ -1,11 +1,5 @@
 let currentId = 1;
 
-// let newId = 1;
-// const idFirst = newId++;
-// const idSecond = newId++;
-// const idThird = newId++;
-// console.log(idThird);
-
 
 const contactList = [
     {
@@ -40,13 +34,15 @@ function addNewContact(firstName, lastName, phoneNumber, emailAddress) {
 // Calling this function allows to create a new contact by passing new arguments in it
 addNewContact('Iryna', 'Predborska', '843-901-372', 'malabiedronka@gmail.com');
 addNewContact('Yuraska', 'Bunya', '142-735-823', 'shini@gmail.com');
-addNewContact('Bunka', 'Busyona', '466-822-858', 'bunbunmeow@gmail.com');
+addNewContact('Klaudia', 'Busyona', '466-822-858', 'bunbunmeow@gmail.com');
 addNewContact('Klaudia', 'Deletovana', '758-336-123', 'kla@deleted.com');
 
-// Function finds and returns contact (array element) by searching for it in the list and using determined parameter.
-const foundContacts = contactList.filter(function (contact) {
-    return contact.firstName[0] === 'K' || contact.lastName[0] === 'B';
-});
+// Function finds and returns contact (array element/elements) by searching for it in the list and using determined parameter.
+function filterContacts(filterContact) {
+    return contactList.filter((contact) => contact.firstName[0] === filterContact || contact.lastName[0] === filterContact)
+}
+
+// console.log(filterContacts('K'));
 
 // Function finds contact`s index in the contact list
 function findLocation(firstLetter){
@@ -64,17 +60,9 @@ function deleteContact(index) {
 
 
 // Functions allow to sort the contact list by alphabet, e-mail alphabet and increasing phone numbers.
-function sortAlphabet(){
-    return contactList.sort((left, right) => left.firstName > right.firstName ? 1 : -1);
+function sortElements(fieldName){
+    return contactList.sort((left, right) => left[fieldName] > right[fieldName] ? 1 : -1);
 }
 
-function sortEmail(){
-    return contactList.sort((left, right) => left.emailAddress > right.emailAddress ? 1 : -1);
-}
-
-function sortPhoneNumber(){
-    return contactList.sort((left, right) => left.phoneNumber > right.phoneNumber ? 1 : -1);
-}
-
-console.log();
+console.log(sortElements('firstName'));
 
