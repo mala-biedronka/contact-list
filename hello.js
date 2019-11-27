@@ -63,8 +63,18 @@ function deleteContact(index) {
 // console.log('deleted: ', deleteContact(findLocation('K')));
 
 
-
 // Functions allow to sort the contact list by alphabet, e-mail alphabet and increasing phone numbers.
-console.log(contactList.sort((left, right) => left.firstName > right.firstName ? 1 : -1));
-console.log(contactList.sort((left, right) => left.emailAddress > right.emailAddress ? 1 : -1));
-console.log(contactList.sort((left, right) => left.phoneNumber > right.phoneNumber ? 1 : -1));
+function sortAlphabet(){
+    return contactList.sort((left, right) => left.firstName > right.firstName ? 1 : -1);
+}
+
+function sortEmail(){
+    return contactList.sort((left, right) => left.emailAddress > right.emailAddress ? 1 : -1);
+}
+
+function sortPhoneNumber(){
+    return contactList.sort((left, right) => left.phoneNumber > right.phoneNumber ? 1 : -1);
+}
+
+console.log();
+
