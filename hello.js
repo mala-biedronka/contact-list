@@ -48,25 +48,18 @@ const foundContacts = contactList.filter(function (contact) {
     return contact.firstName[0] === 'K' || contact.lastName[0] === 'B';
 });
 
-
 // Finds contact`s index in the contact list
 function findLocation(firstLetter){
     return contactList.findIndex(function(contact) {
             return contact.firstName[0] === firstLetter;
-            }
+        }
     );
 }
-console.log(findLocation('K'));
 
 // Function deletes a needed contact from the contact list. Calling the function while logging returns a deleted contact.
 function deleteContact(index) {
     return contactList.splice(index, 1);
 }
-
-// console.log('deleted: ', deleteContact(3));
-
-
-
-
+console.log('deleted: ', deleteContact(findLocation('K')));
 
 
