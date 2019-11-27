@@ -37,6 +37,8 @@ addNewContact('Yuraska', 'Bunya', '142-735-823', 'shini@gmail.com');
 addNewContact('Klaudia', 'Busyona', '466-822-858', 'bunbunmeow@gmail.com');
 addNewContact('Klaudia', 'Deletovana', '758-336-123', 'kla@deleted.com');
 
+// console.log(contactList);
+
 // Function finds and returns contact (array element/elements) by searching for it in the list and using determined parameter.
 function filterContacts(filterContact) {
     return contactList.filter((contact) => contact.firstName[0] === filterContact || contact.lastName[0] === filterContact)
@@ -59,10 +61,20 @@ function deleteContact(index) {
 // console.log('deleted: ', deleteContact(findLocation('K')));
 
 
+// Function finds location of a contact by id.
+function findIdLocation(idNumber){
+    return contactList.findIndex((contact) => contact.id === idNumber);
+}
+
+// Function deletes a contact by id.
+function deleteIdContact(index) {
+    return contactList.splice(index, 1);
+}
+console.log('deleted by id: ', deleteIdContact(findIdLocation(5)));
+
+
 // Functions allow to sort the contact list by alphabet, e-mail alphabet and increasing phone numbers.
 function sortElements(fieldName){
     return contactList.sort((left, right) => left[fieldName] > right[fieldName] ? 1 : -1);
 }
-
-console.log(sortElements('firstName'));
 
