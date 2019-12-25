@@ -9,6 +9,7 @@ body {
     padding: 0;
 }
 
+/*with display there wont be elements dimensions like height and width*/
 .navigation ul {
     display: flex;
     flex-direction: row;
@@ -43,13 +44,14 @@ body {
     padding-top: 50px;
 }
 
+/*There is also an option of centering this element*/
 #banner .content h1 {
     border: 2px solid white;
     float: right;
-    width: 450px;
     margin-right: 50px;
     /*margin: 0 auto;*/
-    padding: 20px;
+    width: 450px;
+    padding: 30px;
     background-color: rgba(150, 150, 150, 0.3);
 }
 
@@ -110,7 +112,7 @@ p {
     border-top: 1px solid LightGrey;
     color: DarkGrey;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 600;
 }
 
 .share {
