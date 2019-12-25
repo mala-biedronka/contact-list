@@ -3,17 +3,32 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.navigation ul {
+/*Reset the default values of user agent stylesheets*/
+* {
     margin: 0;
     padding: 0;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     text-align: center;
+    list-style: none;
 }
 
 .navigation li {
+    width: 200px;
+    justify-content: space-between;
     font-weight: 100;
     letter-spacing: 2px;
-    padding: 10px;
     font-size: 18px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.navigation li:hover {
+    background-color: #f8f8f8;
 }
 
 #banner {
@@ -24,12 +39,16 @@ body {
     width: 100%;
 }
 
+#banner .content {
+    padding-top: 50px;
+}
+
 #banner .content h1 {
     border: 2px solid white;
     float: right;
     width: 450px;
     margin-right: 50px;
-    margin-top: 70px;
+    /*margin: 0 auto;*/
     padding: 20px;
     background-color: rgba(150, 150, 150, 0.3);
 }
@@ -66,6 +85,13 @@ h3 {
     padding: 20px 10px;
 }
 
+.differ {
+    float: left;
+    width: 0.7em;
+    font-size: 300%;
+    font-family: algerian;
+    line-height: 80%;
+}
 p {
     color: grey;
     font-size: 16px;
