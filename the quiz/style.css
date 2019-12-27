@@ -22,7 +22,10 @@ ul {
     list-style: none;
 }
 
-li {
+/*Text-decoration removes underline in hyperlinks
+Using display block allows change dimensions*/
+a {
+    display: block;
     color: #FFF;
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
@@ -31,88 +34,89 @@ li {
     text-transform: uppercase;
     width: 200px;
     padding: 20px 0px;
+    text-decoration: none;
 }
 
-li:hover {
-    color: #466995;
-    background-color: #DBE9EE;
-    border: 1px solid #466995;
+a:hover {
+color: #466995;
+background-color: #DBE9EE;
+border: 1px solid #466995;
 }
 
 h1 {
-    color: #466995;
-    font-family: 'Oswald', sans-serif;
-    font-size: 32px;
-    text-transform: uppercase;
-    padding-bottom: 20px;
+color: #466995;
+font-family: 'Oswald', sans-serif;
+font-size: 32px;
+text-transform: uppercase;
+padding-bottom: 20px;
 }
 
 h2 {
-    color: #333;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 26px;
-    font-weight: 100;
-    margin: 0 auto 20px auto;
+color: #333;
+font-family: 'Varela Round', sans-serif;
+font-size: 20px;
+font-weight: 100;
+margin: 0 auto 20px auto;
 }
 
 h3 {
-    color: #466995;
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 30px;
+color: #466995;
+font-family: 'Oswald', sans-serif;
+font-size: 18px;
+text-align: center;
+font-weight: 700;
+text-transform: uppercase;
+padding: 30px;
 }
 
 
 h4 {
-    color: #466995;
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-align: center;
-    text-transform: uppercase
+color: #466995;
+font-family: 'Oswald', sans-serif;
+font-size: 18px;
+font-weight: 300;
+letter-spacing: 2px;
+text-align: center;
+text-transform: uppercase
 }
 
 p {
-    color: #333;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 18px;
+color: #333;
+font-family: 'Varela Round', sans-serif;
+font-size: 18px;
 }
 
 footer {
-    background-color: #DBE9EE;
-    text-align: center;
+background-color: #DBE9EE;
+text-align: center;
 }
 
 .welcome {
-    background-color: #DBE9EE;
-    padding: 40px;
-    text-align: center;
-    width: 100%;
+background-color: #DBE9EE;
+padding: 40px;
+text-align: center;
+width: 100%;
 }
 
 .question {
-    text-align: center;
-    position: relative;
-    top: 40px;
+text-align: center;
+position: relative;
+top: 40px;
 }
 
 .answer {
-    border: 1px solid #466995;
-    margin: 20px;
-    display: inline-block;
-    border-radius: 5px;
+border: 2px solid #799dc9;
+margin: 20px;
+display: inline-block;
+border-radius: 5px;
 }
 
 .answer:hover {
-    background: #C0D6DF;
-    color: #FFF;
+background: #C0D6DF;
+color: #FFF;
 }
 
 footer {
-    margin-top: 60px;
-    height: 100px;
+margin-top: 60px;
+height: 100px;
 }
