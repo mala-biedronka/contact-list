@@ -22,10 +22,13 @@ ul {
     list-style: none;
 }
 
-/*Text-decoration removes underline in hyperlinks
-Using display block allows change dimensions*/
-a {
+/*Text-decoration removes underline in hyperlinks.
+Using display block allows change "a" dimensions.
+Adding border with the same color as text allows avoid moving elements when hover works(due to this we have the same dimensions of the box).*/
+.nav-question {
     display: block;
+    border: 1px solid #466995;
+    text-decoration: none;
     color: #FFF;
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
@@ -34,13 +37,12 @@ a {
     text-transform: uppercase;
     width: 200px;
     padding: 20px 0px;
-    text-decoration: none;
 }
 
-a:hover {
-color: #466995;
-background-color: #DBE9EE;
-border: 1px solid #466995;
+.nav-question:hover {
+    color: #466995;
+    background-color: #DBE9EE;
+    border: 1px solid #466995;
 }
 
 h1 {
