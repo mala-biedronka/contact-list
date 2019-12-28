@@ -70,3 +70,41 @@ header {
     letter-spacing: 1px;
     color: hsl(6, 5%, 43%);
 }
+
+/*Beans type element*/
+.beans-type {
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px;
+    border: 2px solid black;
+    color: white;
+}
+
+.green-type ,
+.light-type {
+    width: 550px;
+    padding-left: 120px;
+    display: inline-block;
+    /*!*margin: 0;*!*/
+    /*border: 2px solid red;*/
+}
+
+.green-type {
+    background-color: #9EB599;
+}
+
+.light-type {
+    background-color: #683C2C;
+}
+
+.city-type {
+    background-color: #4C352D;
+}
+
+.vienna-type {
+    background-color: #352926;
+}
+
+.italian-type {
+    background-color: #141212;
+}
