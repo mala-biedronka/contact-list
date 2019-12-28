@@ -21,6 +21,7 @@ header {
     height: 600px;
     background-size: cover; /* Resize the background image to cover the entire container */
     background-position: center; /* Center the image */
+    /*background-repeat: no-repeat;*/
 }
 
 
@@ -33,10 +34,11 @@ header {
     text-align: center;
 }
 
-/*.header h1 {*/
-/*    font-family: "Bookman Old Style";*/
-/*    font-size: 80px;*/
-/*    font-weight: 300;*/
-/*    letter-spacing: 10px;*/
-/*    color: white;*/
-/*}*/
+.header h1 {
+    font-family: "Bookman Old Style";
+    font-size: 80px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    color: white;
+}
+
