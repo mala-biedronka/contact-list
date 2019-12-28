@@ -24,14 +24,15 @@ header {
     /*background-repeat: no-repeat;*/
 }
 
-
 .header {
-    /*margin: 0 auto;  !*To center an element it`s needed to set width*!*/
-    width: 800px;
-    position: relative;
-    top: 200px;
-    left: 410px;
+    width: 800px; /*To center an element it`s needed width to be set*/
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-left: 70px;
     text-align: center;
+    /*position: relative;*/ /* Usage relative in rare occasions*/
+    /*top: 200px;*/
+    /*left: 410px;*/
 }
 
 .header h1 {
