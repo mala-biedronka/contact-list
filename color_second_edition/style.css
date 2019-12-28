@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F7F7F7;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #F7F7F7 0%, #EAE0D5 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #F7F7F7 0%, #EAE0D5 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #F7F7F7 0%, #EAE0D5 100%);
+}
+
+/*The header element*/
+header {
+    background-image: url(https://images.unsplash.com/photo-1455267847942-f4fdb784f0c5?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb);
+    background-color: hsl(1, 18%, 80%); /* A background-color is set in case the image is unavailable.*/
+    height: 600px;
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center; /* Center the image */
+}
+
+
+.header {
+    /*margin: 0 auto;  !*To center an element it`s needed to set width*!*/
+    width: 800px;
+    position: relative;
+    top: 200px;
+    left: 410px;
+    text-align: center;
+}
+
+/*.header h1 {*/
+/*    font-family: "Bookman Old Style";*/
+/*    font-size: 80px;*/
+/*    font-weight: 300;*/
+/*    letter-spacing: 10px;*/
+/*    color: white;*/
+/*}*/
