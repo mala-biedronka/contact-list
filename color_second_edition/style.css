@@ -43,3 +43,30 @@ header {
     color: white;
 }
 
+
+/*Note element*/
+
+.note {
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-bottom-style: double;
+    border-color: hsl(6, 17%, 45%);
+
+}
+
+.main-note {
+    padding-bottom: 20px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: hsl(6, 17%, 40%);
+}
+
+.note p {
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: hsl(6, 5%, 43%);
+}
