@@ -76,7 +76,6 @@ header {
     width: 85%;
     margin: 0 auto;
     padding: 60px;
-    border: 2px solid black;
     color: white;
 }
 
@@ -101,17 +100,38 @@ header {
 }
 
 .light-type {
-    background-color: #683C2C;
+    background-color: #a87e6e;
 }
 
 .city-type {
-    background-color: #4C352D;
+    background-color: #875748;
 }
 
 .vienna-type {
-    background-color: #352926;
+    background-color: #705651;
 }
 
 .italian-type {
-    background-color: #141212;
+    background-color: #434141;
 }
+
+.bean-type {
+    font-family: "Bookman Old Style";
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.degrees {
+    padding-bottom: 10px;
+    font-family: 'Oregano', cursive;
+    letter-spacing: 1px;
+    opacity: 70%;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 800;
+    opacity: 90%;
+}
+
