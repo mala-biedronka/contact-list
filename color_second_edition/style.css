@@ -51,8 +51,7 @@ header {
     margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 20px;
-    border-bottom-style: double;
-    border-color: hsl(6, 17%, 45%);
+    border-bottom: 1px solid hsl(6, 17%, 45%);
 
 }
 
@@ -66,7 +65,7 @@ header {
 
 .note p {
     font-size: 20px;
-    line-height: 40px;
+    line-height: 35px;
     letter-spacing: 1px;
     color: hsl(6, 5%, 43%);
 }
@@ -135,3 +134,37 @@ h2 {
     opacity: 90%;
 }
 
+/* Regions element*/
+
+.regions {
+    width: 65%;
+    margin: 0 auto;
+    color: black;
+    font-family: "Bookman Old Style";
+    font-size: 18px;
+    line-height: 25px;
+
+}
+
+.region {
+    border-bottom: 1px solid #E4BB97;
+}
+
+.head-region {
+    color: #E4BB97;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.learn-more {
+    padding: 30px 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+a {
+    color: #214e34;
+    text-decoration: none;
+
+}
